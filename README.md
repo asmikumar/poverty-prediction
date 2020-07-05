@@ -1,8 +1,5 @@
 # Poverty Prediction by Combination of Satellite Imagery and Machine Learning
-*Is it feasible for you to estimate the standard of living or energy consumption of a site based night-time satellite imagery？ This means whether we can do the satellite imagery processing for socioeconomic analysis?*
-
-*Let's find out in this project!!!*
-
+*Is it feasible to estimate the standard of living based on nighttime satellite imagery?
 
 Key Steps
 -------
@@ -89,5 +86,3 @@ NOTES:
  - Map ('poverty_mapping.tiff')
  
 Use this model to calculate the predicted wealth of every one of your original images. Create a heatmap showing the distribution of predicted wealth in Rwanda.
-
-<img align="center" src="figure/pmap.png" alt="Map"/>
