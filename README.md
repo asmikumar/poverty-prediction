@@ -1,5 +1,5 @@
 # Poverty Prediction by Combination of Satellite Imagery and Machine Learning
-*Is it feasible to estimate the standard of living based on nighttime satellite imagery?
+Is it feasible to estimate the standard of living based on nighttime satellite imagery?
 
 Key Steps
 -------
@@ -44,9 +44,6 @@ NOTES:
 - `RWHR61FL.DCF` describes the attributes and the location of each attribute.
 - Geographic Datasets: `rwge61fl.zip` contains the location of each cluster in Rwanda. It is in the format of shapefile, which needs QGIS or other GIS softwares to open. For those who are not familiar with GIS tools or who want a shortcut, you can also sue the file `rwanda_clusters_location.csv` provided.
 
-the cluster locations, overlaid on the nightlights data, are shown in the figure below.
-<img align="center" src="figure/map1.png" alt="Map" style="width: 400px;center;"/>
-
 # Merge nightlights and DHS data at cluster level
 - **INPUT**: 
  - `F182010.v4d_web.stable_lights.avg_vis.tif`: Nightlights data, from Step 1
@@ -59,8 +56,6 @@ the cluster locations, overlaid on the nightlights data, are shown in the figure
  - The resolution of each pixel in the nightlight image is about 1km. Use 10 pixels X 10 pixels to average the luminosity of each cluster.
  - Start by just taking the **Mean** of the luminosity in the 100 pixels and comparing this to cluster average wealth. I also compute other luminosity characteristics of each cluster, such as the **Max**, **Min**, **Standard Deviation** of the 100 pixel values, but this step is not required. Note that the file we provide (`DHS_nightlights.csv`) has these added features.
  - To read the raw raster (nightlights) files, we recommend using the GDAL library. Use `conda install gdal` to install the GDAL library.
-
-<img src="figure/scatter2.png" alt="Map" style="width: 400px;"/>
  
 # Download daytime satellite imagery 
 - **INPUT**: 
